@@ -2,7 +2,7 @@
 
 This repository contains the lecture materials for REDA1-CE1000, *Introduction to Real Estate Data Analytics*, at the NYU Schack Institute of Real Estate. 
 
-R code will be distributed through Moodle. Materials, based on the course developed by Professor Timothy H. Savage, have been modified by the author and are subject to edits. Used with permission. All errors my own.
+R code will be distributed through Moodle. Materials, based on the course developed by Professor Timothy H. Savage (thsavage), have been modified by the author and are subject to edits. Used with permission. All errors my own.
 
 ## Week 1
 
