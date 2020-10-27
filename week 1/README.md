@@ -1,6 +1,6 @@
-REDA1-CE1000: Introduction to Real Estate Data Analytics¶
+**REDA1-CE1000: Introduction to Real Estate Data Analytics**
 
-Week 1: Course Introduction and Overview
+**Week 1: Course Introduction and Overview**
 Demystifying the Unmystical
 Like a hammer and nails, this class is about ideas and the tools to implement them
 The ideas do not change, but the tools to impliment them do
@@ -14,12 +14,13 @@ Course Introduction and Overview
     * Data scientist by practice
 
 Perspective
-* Like every other major industry, CRE will be disrupted by the application of technology empowered by data analytics.
-* It will be called different things, but it is the same thing.
-    * Econometrics and forecasting
-    * Statistical learning
-    * Machine learning
-    * Artificial intelligence (not really)
+   -  Like every other major industry, CRE will be disrupted by the application of technology empowered by data analytics.
+   - It will be called different things, but it is the same thing.
+      -  Econometrics and forecasting
+      -  Statistical learning
+      -  Machine learning
+      -  Artificial intelligence (not really)
+    
 * Why?
     * Example: I want to predict what the 10-Year U.S. Treasury is going to be in the future to determine a realistic DCF for my property.
     * Example: I want to predict what the cap rate on this property is, based on its characteristics.
