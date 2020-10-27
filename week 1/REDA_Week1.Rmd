@@ -1,23 +1,23 @@
 ---
-title: "Week 1 Assignment"
-date: "10/26/2020"
+title: "Week 1 Code & Assignment"
 output: pdf_document
 ---
 
-**REDA1-CE1000 (WEEK 1)**  
-# The power of modern, open-source environments.
-# Getting Accustomed to R and the R Studio IDE.
+**REDA1-CE1000 - Week 1**  
+The power of modern, open-source environments
+Getting Accustomed to R and the R Studio IDE
 
-# Creating a notebook chunk
-# on a mac: 'control' + 'option', then 'i'
-# on a pc: 'control' + 'alt', then 'i'
+**Creating a notebook chunk**
+- on a mac: 'control' + 'option', then 'i'
+- on a pc: 'control' + 'alt', then 'i'
 
 **Install these packages using install.packages("")**
 
-```{r include = FALSE}
+```{r}
 r = getOption("repos")
 r["CRAN"] = "http://cran.us.r-project.org"
 options(repos = r)
+
 install.packages(c("PASWR2", "MASS", "repmis", "latex2exp", 
                    "devtools","tidyverse", "stargazer", "quantmod"))
 ```
@@ -25,7 +25,7 @@ install.packages(c("PASWR2", "MASS", "repmis", "latex2exp",
 
 **Load the libraries**
 
-```{r include = FALSE}
+```{r}
 library(PASWR2)
 library(MASS)
 library(repmis)
@@ -37,7 +37,7 @@ library(stargazer)
 library(quantmod)
 ```
 
-```{r include = FALSE}
+```{r}
 devtools::install_github("sboysel/fredr")
 library(fredr)
 ```
@@ -540,8 +540,8 @@ text(x = seq(1, 15, 2) + 0.7, y = rep(-1, 8), labels = paste(16:23),
 
 **ASSIGNMENT 1**
 
-# 1. Rerun all code above to ensure it works.
+1. Rerun all code above to ensure it works.
 
-# 2. Import several economic data series of your choice from FRED.Generate a variety of plots using different colors and point shapes. Selecting one of the data series, write a one-paragraph narrative about how you would interpret the data series.
+2. Import several economic data series of your choice from FRED.Generate a variety of plots using different colors and point shapes. Selecting one of the data series, write a one-paragraph narrative about how you would interpret the data series.
 
 
