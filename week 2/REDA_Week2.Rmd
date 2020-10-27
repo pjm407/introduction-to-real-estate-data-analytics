@@ -1,0 +1,117 @@
+---
+title: "Week 2 Code & Next Steps"
+output: pdf_document
+---
+
+**REDA1-CE1000 - Week 2, Part 1**  
+
+Foundational Concepts & Probability & Statistics
+
+**Load the libraries**
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(tidyverse)
+library(stargazer)
+library(fredr)
+```
+
+```{r}
+fredr_set_key('fd7c2810b87f970f3d03b94e5b2ccb26') # My key, please don't abuse.
+```
+
+
+**Identify and set the working directory**
+
+```{r}
+getwd() 
+#setwd("/Users/timothysavage/Desktop/REDA")
+```
+
+
+**The Global Savings Glut: A Conjecture**
+
+```{r}
+fedfunds = drop_na(fredr(series_id = "FEDFUNDS", observation_start = as.Date("1990-01-01"), 
+                         observation_end = as.Date("2015-01-01")))
+```
+
+```{r}
+tenyear = drop_na(fredr("DGS10", observation_start = as.Date("1990-01-01"), 
+                        observation_end = as.Date("2015-01-01")))
+```
+
+```{r}
+plot(tenyear$date, tenyear$value, pch=16, col='blue',
+     xlab="Date", ylab="%", ylim=c(0, 10),
+     main="Bernanke's Conjecture: A Global Savings Glut")
+grid(lw=2)
+lines(tenyear$date, tenyear$value, col='blue')
+lines(fedfunds$date, fedfunds$value, col = 'red', pch=16)
+```
+
+
+**Interest Rates: A Conjecture**
+
+```{r}
+tenyear = drop_na(fredr("DGS10", observation_start = as.Date("2006-11-08")))
+```
+
+```{r}
+plot(tenyear$date, tenyear$value, pch=16, col='blue',
+     xlab="Date", ylab="%", ylim=c(0, 6),
+     main="Consequence-Free Thought Leadership")
+grid(lw=2)
+lines(tenyear$date, tenyear$value, col='blue')
+abline(h=5.0, col='red')
+abline(v=as.Date("2016-11-08"), col='green')
+```
+
+
+**Measures of central tendency**
+
+```{r}
+x = c(2, 6, 5, 0, 7, 9, 5, 5, 7, 5)
+```
+
+```{r}
+mean(x)
+```
+
+```{r}
+var(x)
+```
+
+```{r}
+sd(x)
+```
+
+```{r}
+y = c(10, 9, 10, 3, 6, 9, 9, 10, 2, 9)
+```
+
+```{r}
+mean(y)
+```
+
+```{r}
+var(y)
+```
+
+```{r}
+sd(y)
+```
+
+```{r}
+cov(x, y)
+```
+
+```{r}
+cor(x, y)
+```
+
+
+**NO ASSIGNMENT THIS WEEK**
+
+Take this week to review and comprehend the fundamental statistical concepts introduced in class.
