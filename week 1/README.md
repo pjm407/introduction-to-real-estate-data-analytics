@@ -1,22 +1,16 @@
-**REDA1-CE1000: Introduction to Real Estate Data Analytics**
+# REDA1-CE1000: Introduction to Real Estate Data Analytics
 
-**Week 1: Course Introduction and Overview**
-Demystifying the Unmystical
-Like a hammer and nails, this class is about ideas and the tools to implement them
-The ideas do not change, but the tools to impliment them do
+## Week 1: Course Introduction and Overview
 
-Course Introduction and Overview
-* Who I am
-    * Principal Data Scientist at Fidelity Investments
-    * Previously, Head of Quantitative Modelling at CBRE
-* What matters
-    * Econometrician/economist by training
-    * Data scientist by practice
+## Course Introduction and Overview
+    - Who I am
+      * Data Analyst
+      * Studied Applied Quantitative Research and Public Policy at NYU
 
-Perspective
+    - Perspective
    -  Like every other major industry, CRE will be disrupted by the application of technology empowered by data analytics.
    - It will be called different things, but it is the same thing.
-      -  Econometrics and forecasting
+      - Econometrics and forecasting
       -  Statistical learning
       -  Machine learning
       -  Artificial intelligence (not really)
